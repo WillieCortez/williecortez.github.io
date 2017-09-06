@@ -1,0 +1,21 @@
+<!doctype html>
+<!-- Chapter 2
+Block comment
+-->
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>The Rocks Store</title>
+  <meta name="description" content="Stortemplate">
+
+</head>
+
+<body>
+	<h1>THE ROCKS STORE</h1
+<p>Welcome To The Rocks Store - where you can buy any kind of Rock that you can ever think of.  <br/> Whether it's a moon rock, martian rock, a rock the size of The Empire State building or a little tiny river rock. <br/> If we don't have it, we'll go to the moon, the next planet, or the next galaxy to get it for you!</p>
+<img src="11-2-rock-logo-png-hdX1"
+<img src="2-2-rock-png-file"
+</body>
+</html># Auto detect text files and perform LF normalization
+* text=auto
