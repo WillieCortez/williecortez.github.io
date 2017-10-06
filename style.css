@@ -1,7 +1,28 @@
+header
+h2  {text-align:center;
+
+padding: 10px;
+  background: lightgreen;
+  border: 2px solid black;
+	
+	margin: 0 auto
+}
 body {
 		background: linear-gradient(#93B874 10%, #C9DCB9 70%, darkseagreen 90%);
 		}
-			{
-			font-family: 'Open Sans', sans-serif;
-		}	
+		{
+			font-family: 'Open Sans', sans-serif; Arial, Helvetica, sans-serif;
+		}
+
+}
+
+nav li {
+    list-style-type: none;
+    width: 200px;
+}
+
+nav li a {
+    display: block;
+    padding: 1px 1px 8px;
+
 }
