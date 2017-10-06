@@ -1,12 +1,14 @@
 header
 h2  {text-align:center;
-
+background: lightgreen;
 padding: 10px;
-  background: lightgreen;
-  border: 2px solid black;
-	
-	margin: 0 auto
-}
+  
+border: 2px solid black;
+margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 350px;
+    margin-left: 350px;
+    }
 body {
 		background: linear-gradient(#93B874 10%, #C9DCB9 70%, darkseagreen 90%);
 		}
