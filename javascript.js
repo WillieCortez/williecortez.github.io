@@ -30,7 +30,7 @@ function validateForm()
         }
     else if(s == "" || s == null)
         {
-            alert("Please Enter Subject.");
+            alert("Please Enter Comments.");
             return false; 
         }
 }
