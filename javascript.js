@@ -7,12 +7,12 @@ function validateForm()
     
     
 
-    if (x == "" || x == null)
+    if      (x == "" || x == null)
         {
             alert("Please Enter First Name.");
             return false;
         }
-    else if (y == "" || y == null)
+            else if (y == "" || y == null)
         {
             alert("Please Ener Last Name.");
             return false;
@@ -20,8 +20,7 @@ function validateForm()
      
         {    
             else if(z == "" || z == null)       
-        {
-        
+            
             alert("Please Enter Your Proper Email Address.");
             document.getElementById("eTextBox").focus();
             return false;
