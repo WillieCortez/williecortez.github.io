@@ -4,7 +4,7 @@ function validateForm()
     var x = document.contactForm.firstname.value;
     var y = document.contactForm.lastname.value;
     var z = document.contactForm.email.value;
-    
+    var f = document.contactform.subject.value;
     
 
     if (x == "" || x == null)
@@ -17,11 +17,27 @@ function validateForm()
             alert("Please Ener Last Name.");
             return false;
         }
-    else if(z == "" || z == null)
+     
+        {    
+            else if(z == "" || z == null)       
         {
-            alert("Please Enter Proper Email Address.");
-            return false; 
+        
+            alert("Please Enter Your Proper Email Address.");
+            document.getElementById("eTextBox").focus();
+            return false;
+        
         }
-    
+
+            else if(f == "")
+        {
+            alert("Please enter a message in the box provided.");
+            document.getElementById("mTextBox").focus();
+            return false;
+        }
+            else
+        {
+            alert("You submision has been sent!")
+        }         
+}
    
 }
