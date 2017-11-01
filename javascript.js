@@ -22,7 +22,6 @@ function validateForm()
             else if(z == "" || z == null)       
             
             alert("Please Enter Your Proper Email Address.");
-            document.getElementById("eTextBox").focus();
             return false;
         
         }
