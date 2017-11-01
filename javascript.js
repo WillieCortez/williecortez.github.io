@@ -9,17 +9,17 @@ function validateForm()
 
     if (x == "" || x == null)
         {
-            alert("First Name must be filled out.");
+            alert("Please Enter First Name.");
             return false;
         }
     else if (y == "" || y == null)
         {
-            alert("Last Name must be filled out.");
+            alert("Please Ener Last Name.");
             return false;
         }
     else if(z == "" || z == null)
         {
-            alert("Email must be filled out.");
+            alert("Please Enter Proper Email Address.");
             return false; 
         }
     
