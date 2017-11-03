@@ -142,9 +142,14 @@
 	 			</p>  <p align="center" id="datetime" </p>
 
 		<script>
-			document.getElementById("datetime").innerHTML = Date();
+			function dateAndTime(){
+			  document.getElementById("date").innerHTML =  Date();
+			}
+			dateTimer = setInterval(dateAndTime, 1000);
+
+	document.getElementById("datetime").innerHTML = Date();
+	dateTimer = setInterval(dateAndTime, 1000);
 		</script> <br/>
-				(refresh page to update current time) </h3>
-</body>
+				
 
 </html>
