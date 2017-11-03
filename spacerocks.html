@@ -98,8 +98,12 @@
 	 </p>  <p align="center" id="datetime" </p>
 
 	<script>
-		document.getElementById("datetime").innerHTML = Date();
-	</script> <br/>
-		(refresh page to update current time) </h3>
+			function dateAndTime(){
+			  document.getElementById("datetime").innerHTML =  Date();
+			}
+			dateTimer = setInterval(dateAndTime, 1000);
+	document.getElementById("datetime").innerHTML = Date();
+	dateTimer = setInterval(dateAndTime, 1000);
+		</script> <br/>
 </body>
 </html>
