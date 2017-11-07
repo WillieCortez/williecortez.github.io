@@ -12,6 +12,7 @@
   
   <link rel="stylesheet" type="text/css" href="style.css" />
     <style type="text/css">
+	<script type="text/javascript" src="/javascript.js"></script>
  
 	
 				
@@ -25,24 +26,96 @@
 
 <body >
  
- 
+  <style>
+.dropbtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 25px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
 
+.dropbtn:hover, .dropbtn:focus {
+    background-color: #3e8e41;
+}
 
+.dropdown {
+    float: left;
+    position: relative;
+    display: inline-block;
+    
+}
 
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    left: 0;
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown a:hover {background-color: #f1f1f1}
+
+.show {display:block;}
+</style>
+</head>
 <body>
-	<h1>THE ROCKS STORE</h1
+<header>
+  
+<h1>THE ROCKS STORE</h1
 	
-<p> <h2 style="text-align: center"> Welcome To The Rocks Store- where you can buy any kind of Rock that you can ever think of.  <br/> Whether it's a moon rock, martian rock, a rock the size of The Empire State building or a little tiny river rock. <br/> If we don't have it, we'll go to the moon, the next planet, or the next galaxy to get it for you!</style></h2></p>
 
 
-<nav>
-           <ul> <h3>
-                <li><a href="index.htm">Home</a></li>
-		<li><a href="riverrocks.html">River Rocks</a></li>
-                <li><a href="spacerocks.html">Space Rocks</a></li>
-                <li><a href="contactpage.html">Contact Us!</a></li>
-				</h3>  </ul>
-        </nav>
+<div class="dropdown">
+<button onclick="myFunction()" class="dropbtn">Menu</button>
+  <div id="myDropdown" class="dropdown-content">
+    <a href="riverrocks.html">River Rocks</a>
+    <a href="spacerocks.html">Space Rocks</a>
+    <a href="contactpage.html">Contact Us</a>
+  </div>
+</div>
+
+<script>
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>
+
+<p> <h2 style="text-align: center" "width: 12px;"> Welcome To The Rocks Store- where you can buy any kind of Rock that you can ever think of.  <br/> Whether it's a moon rock, martian rock, a rock the size of The Empire State building or a little tiny river rock. <br/> If we don't have it, we'll go to the moon, the next planet, or the next galaxy to get it for you!</style></h2></p>
+
+
+	
+
+
+
 	
 	
 	<img src= "ImagesSpacerocks/image5Comet.jpg" alt="Comet" style="width: 612px; height: 440px;" align="center"/>
@@ -65,15 +138,7 @@
   <meta name="description" content="HTML5 Template">
 
 </head>
-<nav>
-<ul> <h3>
-    
-	<li><a href="index.htm">Home</a></li>
-    	<li><a href="riverrocks.html">River Rocks</a></li>
-	<li><a href="spacerocks.html">Space Rocks</a></li>
-	<li><a href="contactpage.html">Contact Us!</a></li>
-  </h3> </ul>
-	</nav>
+
 
 	<p align="center" <h3> Today is: 
 	  
