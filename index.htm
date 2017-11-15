@@ -111,6 +111,150 @@ window.onclick = function(event) {
 
 <p> <h2 style="text-align: center" "width: 12px;"> Welcome To The Rocks Store- where you can buy any kind of Rock that you can ever think of.  <br/> Whether it's a moon rock, martian rock, a rock the size of The Empire State building or a little tiny river rock. <br/> If we don't have it, we'll go to the moon, the next planet, or the next galaxy to get it for you!</style></h2></p>
 
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {box-sizing:border-box}
+body {font-family: Verdana,sans-serif;}
+.mySlides {display:none}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 650px;
+  max-height: 600px;
+  position: relative;
+  margin: auto;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/5 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+</style>
+</head>
+<body>
+
+<h2>Our Products Showcase</h2>
+
+
+<div class= "slideshow-container">
+
+<div class= "mySlides fade">
+  <div class= "numbertext">1 / 5 </div>
+  <img src= "ImagesSpacerocks/image1SaturnRingRocks.jpg" style="width:100%">
+  <div class= "text">Saturn Ring Rocks </div>
+</div>
+
+<div class= "mySlides fade">
+  <div class= "numbertext">2 / 5</div>
+  <img src= "ImagesRiverRocks/image2decorative.jpg" style="width:100%">
+  <div class= "text">Decorative Rocks</div>
+</div>
+
+<div class= "mySlides fade">
+  <div class= "numbertext">3 / 5</div>
+  <img src= "ImagesSpacerocks/image2Asteroid.jpg" style="width:100%">
+  <div class= "text">Asteroid Rocks</div>
+</div>
+
+<div class= "mySlides fade">
+  <div class= "numbertext">4 / 5</div>
+  <img src= "ImagesRiverRocks/Image5SlateRocks.jpg" style="width:100%">
+  <div class= "text">Asteroid Rocks</div>
+</div>
+
+
+<div class= "mySlides fade">
+  <div class= "numbertext">5 / 5</div>
+  <img src= "ImagesSpacerocks/image3Nebula.jpg" style="width:100%">
+  <div class= "text">Nebula Rocks </div>
+</div>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
+  
+</div>
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+       slides[i].style.display = "none";  
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}    
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+    setTimeout(showSlides, 4000); // Change image every 4 seconds
+}
+</script>
 
 	
 
@@ -118,21 +262,7 @@ window.onclick = function(event) {
 
 	
 	
-	<img src= "ImagesSpacerocks/image5Comet.jpg" alt="Comet" style="width: 612px; height: 440px;" align="center"/>
 	
-	<img src= "IgneousRocks.jpeg" alt="Igneous Rock" style="width: 612px; height: 440px;" align="center"/>
-	
-	<img src= "ImagesSpacerocks/image2Asteroid.jpg" alt="Asteroid" style="width: 610px; height: 440px;" align="center"/>
-	
-	<img src= "RocksImageLogo.jpg" alt="Rocks Image Logo" style="width: 610px; height: 440px;" align="center"/>
-	
-	<img src= "ImagesRiverRocks/Image5SlateRocks.jpg" alt="Slate Rocks" style="width: 610px; height: 440px;" align="center">
-	
-	<img src= "2-2-rock-png-file.png" alt="face rock" style="width: 610px; height: 440px;" align="center"/>
-	
-	<img src= "ImagesRiverRocks/Image4CountryPebbles.jpg" alt="Country Pebbles" style="width: 610px; height: 440px;" align="center"/>
-	
-	<img src= "ImagesSpacerocks/image3Nebula.jpg" alt="Nebula" style="width: 610px; height: 440px;" align="center">
 </body>
 </html>
   <meta name="description" content="HTML5 Template">
