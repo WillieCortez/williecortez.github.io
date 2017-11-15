@@ -74,44 +74,8 @@
 <header>
   
 <h1>THE ROCKS STORE</h1
-	
 
-
-<div class="dropdown">
-<button onclick="myFunction()" class="dropbtn">Menu</button>
-  <div id="myDropdown" class="dropdown-content">
-    <a href="riverrocks.html">River Rocks</a>
-    <a href="spacerocks.html">Space Rocks</a>
-    <a href="contactpage.html">Contact Us</a>
-  </div>
-</div>
-
-<script>
-/* When the user clicks on the button, 
-toggle between hiding and showing the dropdown content */
-function myFunction() {
-    document.getElementById("myDropdown").classList.toggle("show");
-}
-
-// Close the dropdown if the user clicks outside of it
-window.onclick = function(event) {
-  if (!event.target.matches('.dropbtn')) {
-
-    var dropdowns = document.getElementsByClassName("dropdown-content");
-    var i;
-    for (i = 0; i < dropdowns.length; i++) {
-      var openDropdown = dropdowns[i];
-      if (openDropdown.classList.contains('show')) {
-        openDropdown.classList.remove('show');
-      }
-    }
-  }
-}
-</script>
-
-<p> <h2 style="text-align: center" "width: 12px;"> Welcome To The Rocks Store- where you can buy any kind of Rock that you can ever think of.  <br/> Whether it's a moon rock, martian rock, a rock the size of The Empire State building or a little tiny river rock. <br/> If we don't have it, we'll go to the moon, the next planet, or the next galaxy to get it for you!</style></h2></p>
-
-<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
 * {box-sizing:border-box}
 body {font-family: Verdana,sans-serif;}
@@ -186,7 +150,7 @@ body {font-family: Verdana,sans-serif;}
 </head>
 <body>
 
-<h2>Our Products Showcase</h2>
+	<h2>Our Products Showcase</h2>
 
 
 <div class= "slideshow-container">
@@ -255,6 +219,43 @@ function showSlides() {
     setTimeout(showSlides, 4000); // Change image every 4 seconds
 }
 </script>
+
+
+<div class="dropdown">
+<button onclick="myFunction()" class="dropbtn">Menu</button>
+  <div id="myDropdown" class="dropdown-content">
+    <a href="riverrocks.html">River Rocks</a>
+    <a href="spacerocks.html">Space Rocks</a>
+    <a href="contactpage.html">Contact Us</a>
+  </div>
+</div>
+
+<script>
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>
+
+<p> <h2 style="text-align: center" "width: 12px;"> Welcome To The Rocks Store- where you can buy any kind of Rock that you can ever think of.  <br/> Whether it's a moon rock, martian rock, a rock the size of The Empire State building or a little tiny river rock. <br/> If we don't have it, we'll go to the moon, the next planet, or the next galaxy to get it for you!</style></h2></p>
+
+
 
 	
 
